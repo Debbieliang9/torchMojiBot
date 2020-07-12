@@ -14,3 +14,7 @@ For step 2, see [here](https://github.com/cw75/torchMojiBot/tree/master/sagemake
 For step 3, see [here](https://github.com/cw75/torchMojiBot/tree/master/lambda).
 
 For step 4, see [here](https://aws.amazon.com/blogs/machine-learning/call-an-amazon-sagemaker-model-endpoint-using-amazon-api-gateway-and-aws-lambda/) (Section: Create an API Gateway – Integration request setup).
+
+After completing all the steps, send a direct message "this is great!" to your bot in the Slack workspace. You should see the following.
+
+![Slack](https://github.com/cw75/torchMojiBot/blob/master/images/slack.png)
