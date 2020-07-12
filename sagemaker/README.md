@@ -29,4 +29,4 @@ Finally, create a Sagemaker endpoint:
 3. Select "Use an existing endpoint configuration" and choose the endpoint configuration that we just created.
 4. Click "Create endpoint".
 
-The above steps can also be accomplished via the [Sagemaker API](https://docs.aws.amazon.com/sagemaker/latest/APIReference/Welcome.html).
+All steps above can also be accomplished via the [Sagemaker API](https://docs.aws.amazon.com/sagemaker/latest/APIReference/Welcome.html).
