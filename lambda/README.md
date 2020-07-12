@@ -41,7 +41,7 @@ For Sagemaker deployment, before creating the Lambda function, you need to creat
 6. Search and select the policy you just created and click through to the "Review" tab.
 7. Give your role a name and click "Create role".
 
-On the AWS Lambda [console](https://console.aws.amazon.com/lambda/),
+Now we are ready to create and upload our Lambda function. On the AWS Lambda [console](https://console.aws.amazon.com/lambda/),
 1. Click "Create function".
 2. Name the function "emojize".
 3. Select Python3.6 as Runtime.
