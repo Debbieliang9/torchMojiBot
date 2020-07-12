@@ -14,7 +14,7 @@ Then, on the Algorithmia console:
 3. Under "Language" choose "Python3.x" and leave everything else as is. 
 4. Click "Create New Algorithm".
 
-You will be prompted with a code snippet that you can use to clone the repo locally. After cloning the repo,
+You will be prompted with a code snippet that you can use to clone the repo. After cloning the repo,
 1. Overwrite `requirements.txt` and `src/emojize.py` with the files in our `emojize/`. 
 2. Replace the path placeholder in line 31-32 of `emojize.py` with your file upload paths (you can find them in the Algorithmia console).
 3. `git commit` `requirements.txt` and `src/emojize.py`, and `git push` (this takes a while).
