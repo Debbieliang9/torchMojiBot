@@ -19,7 +19,7 @@ If you deployed the model with Sagemaker, run `cd sagemaker && zip -g ${OLDPWD}/
 
 If you deployed the model with Algorithmia, run `cd algorithmia && zip -g ${OLDPWD}/function.zip lambda_function.py && cd ${OLDPWD}`.
 
-For Sagemaker deployment, before creating the Lambda function, you need to create an [IAM role](https://console.aws.amazon.com/iam/home?ad=c&cp=bn&p=iam#/roles) with the `sagemaker:InvokeEndpoint` policy and later assign it to the function.
+For Sagemaker deployment, before creating the Lambda function, you need to create an IAM role with the `sagemaker:InvokeEndpoint` policy and later assign it to the function.
 1. Go to the IAM [policy](https://console.aws.amazon.com/iam/home?ad=c&cp=bn&p=iam#/policies) and click "Create policy".
 2. Open the "JSON" tab and paste the following:
 ```
