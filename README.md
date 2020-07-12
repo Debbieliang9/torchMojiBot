@@ -18,3 +18,5 @@ For step 4, see [here](https://aws.amazon.com/blogs/machine-learning/call-an-ama
 After completing all the steps, send a direct message "this is great!" to your bot in the Slack workspace. You should see the following.
 
 ![Slack](https://github.com/cw75/torchMojiBot/blob/master/images/slack.png)
+
+After you are done having fun, remember to delete all the AWS resources you created!
