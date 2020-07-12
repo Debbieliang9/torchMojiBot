@@ -13,7 +13,7 @@ Then, build a docker image and push it to AWS ECR:
 
 Next, create a Sagemaker model:
 1. Click the "Models" tab on the [Sagemaker console](https://console.aws.amazon.com/sagemaker/) and click "Create model".
-2. Create a name for the model.
+2. Create a name for the model and assign an [IAM role](https://console.aws.amazon.com/iam/home?ad=c&cp=bn&p=iam#/roles). If you don't have one, click "Create a new role" from the drop-down list and click "Create role". This will create a role that has the `AmazonSageMakerFullAccess` IAM policy attached, which is sufficient for our purpose.
 3. In container definition, choose "Provide model artifacts and inference image location" and paste the ECR URI into "Location of inference code image".
 4. Click "Create model".
 
