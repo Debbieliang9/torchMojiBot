@@ -9,8 +9,8 @@ Overall, there are 5 steps:
 4. Set up an API gateway that routes traffic to the Lambda function and exposes a REST endpoint to Slack. Instruction [here](https://aws.amazon.com/blogs/machine-learning/call-an-amazon-sagemaker-model-endpoint-using-amazon-api-gateway-and-aws-lambda/) (Section: Create an API Gateway – Integration request setup).
 5. Paste the REST endpoint URL to the Slack bot's event subscription page.
 
-After completing all the steps, send a direct message "this is great!" to your bot in the Slack workspace. You should see the following.
+After completing all the steps above, send a direct message "this is great!" to your bot in the Slack workspace. You should see the following.
 
 ![Slack](https://github.com/cw75/torchMojiBot/blob/master/images/slack.png)
 
-After you are done having fun, remember to delete all the AWS resources you created!
+When you are done having fun, remember to delete all the AWS resources you created!
