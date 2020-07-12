@@ -30,7 +30,7 @@ import Algorithmia
 
 input = "this is great!"
 client = Algorithmia.client('api key')
-algo = client.algo('user_name/emojize/0.1.0')
+algo = client.algo('username/emojize/0.1.0')
 algo.set_options(timeout=300) # optional
 print(algo.pipe(input).result)
 ```
