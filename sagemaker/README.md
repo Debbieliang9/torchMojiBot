@@ -3,7 +3,7 @@
 The first step is to build a docker image that runs our [web server](https://github.com/cw75/torchMojiBot/blob/master/sagemaker/emojibot-sagemaker.py) that responds to Sagemaker's health check (ping) requests and also serves prediction requests.
 
 Before building the image, we need two files for model initialization: `vocabulary.json` for sentence tokenization and `pytorch_model.bin` that stores pre-trained model weights.
-`vocabulary.json` is already in the repo here `torchMojiBot/sagemaker/model/vocabulary.json`. To download `pytorch_model.bin`, simply run `python3 scripts/download_weights.py` from the `torchMojiBot/sagemaker` directory. The weights will be downloaded to `torchMojiBot/sagemaker/model/pytorch_model.bin`
+`vocabulary.json` is already in the repo here `torchMojiBot/sagemaker/model/vocabulary.json`. To download `pytorch_model.bin`, simply run `python3 scripts/download_weights.py` from the `torchMojiBot/sagemaker` directory. The weights will be downloaded to `torchMojiBot/sagemaker/model/pytorch_model.bin`.
 
 Then, go to AWS [ECR console](https://console.aws.amazon.com/ecr) and create a new repository by hitting the "Create repository" button.
 Click the repository name, and click "View push commands" to see necessary steps to [authenticate](https://docs.aws.amazon.com/AmazonECR/latest/userguide/Registries.html#registry_auth), build and push the docker image to ECR.
