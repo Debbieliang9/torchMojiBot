@@ -1,6 +1,6 @@
 # Authentication and message routing with AWS Lambda
 
-This directory contains the code for the [AWS Lambda](https://console.aws.amazon.com/lambda/) function that:
+This directory contains the code for the [AWS Lambda](https://aws.amazon.com/lambda/) function that:
 1. Accepts and responds to the [URL verification](https://api.slack.com/events/url_verification) request from Slack.
 2. Authenticates the Slack subscription message, extracts the text and sends it to our prediction service (Sagemaker or Algorithmia).
 3. Receives the prediction response (emoji) and uses the Slack web client to post the emoji reaction to Slack workspace.
@@ -19,7 +19,7 @@ If you deployed the model with Sagemaker, run `cd sagemaker && zip -g ${OLDPWD}/
 
 If you deployed the model with Algorithmia, run `cd algorithmia && zip -g ${OLDPWD}/function.zip lambda_function.py && cd ${OLDPWD}`.
 
-On the AWS Lambda console,
+On the AWS Lambda [console](https://console.aws.amazon.com/lambda/),
 1. Click "Create function".
 2. Name the function "emojize".
 3. Select Python3.6 as Runtime.
