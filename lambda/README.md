@@ -23,7 +23,7 @@ On the AWS Lambda console,
 1. Click "Create function".
 2. Name the function "emojize".
 3. Select Python3.6 as Runtime.
-4. If you deployed the model with Sagemaker, create an [IAM role](https://console.aws.amazon.com/iam/home?ad=c&cp=bn&p=iam#/roles) with the `sagemaker:InvokeEndpoint` policy and assign it to the function. Details can be found [here](https://aws.amazon.com/blogs/machine-learning/call-an-amazon-sagemaker-model-endpoint-using-amazon-api-gateway-and-aws-lambda/) (Section: Create a Lambda function that calls the SageMaker Runtime Invoke_Endpoint)
+4. If you deployed the model with Sagemaker, create an [IAM role](https://console.aws.amazon.com/iam/home?ad=c&cp=bn&p=iam#/roles) with the `sagemaker:InvokeEndpoint` policy and assign it to the function. Details can be found [here](https://aws.amazon.com/blogs/machine-learning/call-an-amazon-sagemaker-model-endpoint-using-amazon-api-gateway-and-aws-lambda/) (see the permission json file at Section: Create a Lambda function that calls the SageMaker Runtime Invoke_Endpoint)
 5. Click "Create function".
 
 Install and configure [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html).
