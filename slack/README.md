@@ -5,6 +5,9 @@ Before deploying the model, Lambda function, and setting up the API gateway:
 1. [Create](https://slack.com/create) a Slack workspace for testing the bot.
 2. Go to the Slack [app directory](https://api.slack.com/apps) and click “Create New App”.
 3. Create a name for the app (bot) and link it to the test workspace.
+
+![slack-create](https://github.com/cw75/torchMojiBot/blob/master/images/slack-create.png)
+
 4. Go to the “OAuth & Permissions” tab and add `channels:history`, `im:history`, and `reactions:write` to the “Bot Token Scopes”.
 
 ![slack-auth](https://github.com/cw75/torchMojiBot/blob/master/images/slack-auth.png)
