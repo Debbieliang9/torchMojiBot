@@ -1,6 +1,6 @@
 # Authentication and message routing with AWS Lambda
 
-This directory contains the code for the AWS Lambda function that:
+This directory contains the code for the [AWS Lambda](https://console.aws.amazon.com/lambda/) function that:
 1. Accepts and responds to the [URL verification](https://api.slack.com/events/url_verification) request from Slack.
 2. Authenticates the Slack subscription message, extracts the text and sends it to our prediction service (Sagemaker or Algorithmia).
 3. Receives the prediction response (emoji) and uses the Slack web client to post the emoji reaction to Slack workspace.
