@@ -16,7 +16,7 @@ signing_secret = 'xxx'
 # Replace xxx with your Algorithmia client token.
 algorithmia_client = Algorithmia.client('xxx')
 # Replace xxx with the path to your Emojize algorithm on Algorithmia.
-algo = algorithmia_client.algo('Path to the Emojize Algorithm')
+algo = algorithmia_client.algo('username/emojize/0.1.0')
 
 def lambda_handler(event, context):
     headers = event['headers']
