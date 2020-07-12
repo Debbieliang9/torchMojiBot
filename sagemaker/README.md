@@ -7,7 +7,7 @@ Before building the image, we need two files for model initialization: `vocabula
 
 Then, build a docker image and push it to AWS ECR:
 1. Go to AWS [ECR console](https://console.aws.amazon.com/ecr) and create a new repository.
-2. Click the repository name, and click "View push commands" to see necessary steps to for [authentication](https://docs.aws.amazon.com/AmazonECR/latest/userguide/Registries.html#registry_auth).
+2. Click the repository name and click "View push commands" to see necessary steps for [authentication](https://docs.aws.amazon.com/AmazonECR/latest/userguide/Registries.html#registry_auth). You only need to perform step 1 in "View push commands".
 3. Return to this repo and run `docker build . -f emojibot-sagemaker.dockerfile -t <Your ECR URI>` to build the docker image.
 4. Run `docker push <Your ECR URI>` to push the docker image to ECR.
 
