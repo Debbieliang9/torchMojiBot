@@ -1,6 +1,6 @@
 # torchMojiBot
 
-This repo contains the code and detailed instruction to reproduce the intelligent Slack bot I built in this blog post (TODO: add link). Powered by the torchMoji model, the bot automatically reacts to Slack messages with emoji.
+This repo contains the code and detailed instruction to reproduce the intelligent Slack bot I built in this blog post (TODO: add link). Powered by the [torchMoji](https://github.com/cw75/torchMoji) model, the bot automatically reacts to Slack messages with emoji.
 
 Overall, there are 5 steps:
 1. Create a Slack app [here](https://api.slack.com/apps/), link it to your workspace and grant permissions/subscriptions as outlined in my blog post.
