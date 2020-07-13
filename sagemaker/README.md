@@ -2,7 +2,7 @@
 
 The first step is to build a docker image that runs our [web server](https://github.com/cw75/torchMojiBot/blob/master/sagemaker/emojibot-sagemaker.py) that responds to SageMaker's health check (ping) requests and serves prediction by running the torchMoji model.
 
-Before building the image, we need two files for model initialization: `vocabulary.json` for sentence tokenization and `pytorch_model.bin` that stores pre-trained model weights.
+Before building the image, you need two files for model initialization: `vocabulary.json` for sentence tokenization and `pytorch_model.bin` that stores pre-trained model weights.
 `vocabulary.json` is already in the repo here `torchMojiBot/sagemaker/model/vocabulary.json`. To download `pytorch_model.bin`, simply run `python3 scripts/download_weights.py` from the `torchMojiBot/sagemaker` directory. The weights will be downloaded to `torchMojiBot/sagemaker/model/pytorch_model.bin`.
 
 Then, build a docker image and push it to AWS ECR:
@@ -20,13 +20,13 @@ Next, create a SageMaker model:
 Then, create an endpoint configuration:
 1. Click the "Endpoint configurations" tab and click "Create endpoint configuration".
 2. Create a name for the endpoint configuration.
-3. Click "Add model" and select the model we just created.
+3. Click "Add model" and select the model you just created.
 4. Click "Create endpoint configuration".
 
 Finally, create a SageMaker endpoint:
 1. Click the "Endpoints" tab and click "Create endpoint".
 2. Create a name for the endpoint.
-3. Select "Use an existing endpoint configuration" and choose the endpoint configuration that we just created.
+3. Select "Use an existing endpoint configuration" and choose the endpoint configuration that you just created.
 4. Click "Create endpoint".
 
 All steps above can also be accomplished via the [SageMaker API](https://docs.aws.amazon.com/sagemaker/latest/APIReference/Welcome.html).
