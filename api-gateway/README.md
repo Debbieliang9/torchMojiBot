@@ -6,7 +6,7 @@
 4. Click `/events` in the "Resources" directory, from the "Actions" drop-down list, click "Create Method".
 5. Select "POST" from the drop-down list and click the tick mark.
 6. Choose "Lambda Function" as the integration type and specify the region and the name ("emojize") of your Lambda function.
-7. **Important**: check "Use Lambda Proxy integration". This lets the API Gateway preserves the HTTP headers when forwarding the request. We need the information in the header to perform Slack's authentication.
+7. **Important**: check "Use Lambda Proxy integration". This lets the API Gateway preserves the HTTP headers when forwarding the request. The Lambda function need the information in the header to perform Slack's authentication.
 8. Click "Save" and "OK".
 9. From the "Actions" drop-down list, click "Deploy API". Select "New Stage" and name the stage "slack". Then click "Deploy".
 10. Append "/events" to the "Invoke URL" (it should look like "https://xxx.amazonaws.com/slack/events") and paste it to the Slack bot event subscription page (see step 6 [here](https://github.com/cw75/torchMojiBot/tree/master/slack)).
