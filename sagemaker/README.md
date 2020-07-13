@@ -1,6 +1,6 @@
 # Deploying the model on SageMaker
 
-The first step is to build a docker image that runs our [web server](https://github.com/cw75/torchMojiBot/blob/master/sagemaker/emojibot-sagemaker.py) that responds to SageMaker's health check (ping) requests and serves prediction requests.
+The first step is to build a docker image that runs our [web server](https://github.com/cw75/torchMojiBot/blob/master/sagemaker/emojibot-sagemaker.py) that responds to SageMaker's health check (ping) requests and serves prediction by running the torchMoji model.
 
 Before building the image, we need two files for model initialization: `vocabulary.json` for sentence tokenization and `pytorch_model.bin` that stores pre-trained model weights.
 `vocabulary.json` is already in the repo here `torchMojiBot/sagemaker/model/vocabulary.json`. To download `pytorch_model.bin`, simply run `python3 scripts/download_weights.py` from the `torchMojiBot/sagemaker` directory. The weights will be downloaded to `torchMojiBot/sagemaker/model/pytorch_model.bin`.
