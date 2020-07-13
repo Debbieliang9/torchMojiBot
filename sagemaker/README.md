@@ -1,6 +1,6 @@
-# Deploying the model on Sagemaker
+# Deploying the model on SageMaker
 
-The first step is to build a docker image that runs our [web server](https://github.com/cw75/torchMojiBot/blob/master/sagemaker/emojibot-sagemaker.py) that responds to Sagemaker's health check (ping) requests and serves prediction requests.
+The first step is to build a docker image that runs our [web server](https://github.com/cw75/torchMojiBot/blob/master/sagemaker/emojibot-sagemaker.py) that responds to SageMaker's health check (ping) requests and serves prediction requests.
 
 Before building the image, we need two files for model initialization: `vocabulary.json` for sentence tokenization and `pytorch_model.bin` that stores pre-trained model weights.
 `vocabulary.json` is already in the repo here `torchMojiBot/sagemaker/model/vocabulary.json`. To download `pytorch_model.bin`, simply run `python3 scripts/download_weights.py` from the `torchMojiBot/sagemaker` directory. The weights will be downloaded to `torchMojiBot/sagemaker/model/pytorch_model.bin`.
@@ -11,8 +11,8 @@ Then, build a docker image and push it to AWS ECR:
 3. Return to this repo and run `docker build . -f emojibot-sagemaker.dockerfile -t <Your ECR URI>` to build the docker image.
 4. Run `docker push <Your ECR URI>` to push the docker image to ECR.
 
-Next, create a Sagemaker model:
-1. Click the "Models" tab on the [Sagemaker console](https://console.aws.amazon.com/sagemaker/) and click "Create model".
+Next, create a SageMaker model:
+1. Click the "Models" tab on the [SageMaker console](https://console.aws.amazon.com/sagemaker/) and click "Create model".
 2. Create a name for the model and assign an [IAM role](https://console.aws.amazon.com/iam/home?ad=c&cp=bn&p=iam#/roles). If you don't have one, click "Create a new role" from the drop-down list and click "Create role". This will create a role that has the `AmazonSageMakerFullAccess` IAM policy attached, which is sufficient for our purpose.
 3. In container definition, choose "Provide model artifacts and inference image location" and paste the ECR URI into "Location of inference code image".
 4. Click "Create model".
@@ -23,10 +23,10 @@ We then create an endpoint configuration:
 3. Click "Add model" and select the model we just created.
 4. Click "Create endpoint configuration".
 
-Finally, create a Sagemaker endpoint:
+Finally, create a SageMaker endpoint:
 1. Click the "Endpoints" tab and click "Create endpoint".
 2. Create a name for the endpoint.
 3. Select "Use an existing endpoint configuration" and choose the endpoint configuration that we just created.
 4. Click "Create endpoint".
 
-All steps above can also be accomplished via the [Sagemaker API](https://docs.aws.amazon.com/sagemaker/latest/APIReference/Welcome.html).
+All steps above can also be accomplished via the [SageMaker API](https://docs.aws.amazon.com/sagemaker/latest/APIReference/Welcome.html).
