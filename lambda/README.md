@@ -9,15 +9,15 @@ The `package` folder contains all the Python dependencies required by `lambda_fu
 
 Before uploading to AWS Lambda, you need to replace the credential placeholders in `lambda_function.py` with yours.
 
-If you deployed the model with SageMaker, in `sagemaker/lambda_function.py`, provide your Slack bot user's OAuth access token and Slack app's signing secret (lines 12 and 14). They can be found by clicking the Slack app name in your [app directory](https://api.slack.com/apps). Also, replace the `EndpointName` on line 44 with your Sagemaker endpoint name.
+If you deployed the model on SageMaker, in `sagemaker/lambda_function.py`, provide your Slack bot user's OAuth access token and Slack app's signing secret (lines 12 and 14). They can be found by clicking the Slack app name in your [app directory](https://api.slack.com/apps). Also, replace the `EndpointName` on line 44 with your Sagemaker endpoint name.
 
-If you deployed the model with Algorithmia, in `algorithmia/lambda_function.py`, in addition to the Slack credentials above, provide your Algorithmia API key and path to your deployed model (lines 17 and 19).
+If you deployed the model on Algorithmia, in `algorithmia/lambda_function.py`, in addition to the Slack credentials above, provide your Algorithmia API key and path to your deployed model (lines 17 and 19).
 
 Run `cd package && zip -r9 ${OLDPWD}/function.zip . && cd ${OLDPWD}`.
 
-If you deployed the model with SageMaker, run `cd sagemaker && zip -g ${OLDPWD}/function.zip lambda_function.py && cd ${OLDPWD}`.
+If you deployed the model on SageMaker, run `cd sagemaker && zip -g ${OLDPWD}/function.zip lambda_function.py && cd ${OLDPWD}`.
 
-If you deployed the model with Algorithmia, run `cd algorithmia && zip -g ${OLDPWD}/function.zip lambda_function.py && cd ${OLDPWD}`.
+If you deployed the model on Algorithmia, run `cd algorithmia && zip -g ${OLDPWD}/function.zip lambda_function.py && cd ${OLDPWD}`.
 
 For SageMaker deployment, before creating the Lambda function, you need to create an IAM policy that allows the function to invoke SageMaker endpoints.
 1. Go to the IAM [policy](https://console.aws.amazon.com/iam/home?ad=c&cp=bn&p=iam#/policies) and click "Create policy".
@@ -44,7 +44,7 @@ Now we are ready to create and upload our Lambda function. On the AWS Lambda [co
 4. Click "Choose or create an execution role" and select "Create a new role with basic Lambda permissions".
 5. Click "Create function".
 
-If you deployed the model with SageMaker, attach the IAM policy you just created to the execution role.
+If you deployed the model on SageMaker, attach the IAM policy you just created to the execution role.
 1. Go to the IAM [role](https://console.aws.amazon.com/iam/home?ad=c&cp=bn&p=iam#/roles) and search for the execution role.
 2. Click "Attach policies" and search for the IAM policy.
 3. Click "Attach policy".
