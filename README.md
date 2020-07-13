@@ -9,12 +9,12 @@ Overall, there are 5 steps:
 4. Set up the API gateway that routes traffic to the Lambda function and exposes a REST endpoint to Slack. Instruction [here](https://github.com/cw75/torchMojiBot/tree/master/api-gateway).
 5. Finish setting up the Slack bot by completing step 5 [here](https://github.com/cw75/torchMojiBot/tree/master/slack).
 
-After completing all the steps above, send a direct message "this is great!" to your bot in the workspace. You should see the following.
+After completing all the steps above, send a direct message "this is great!" to your bot in the Slack workspace. You should see the following.
 
 ![Slack](https://github.com/cw75/torchMojiBot/blob/master/images/slack.png)
 
 You can even add the bot to channels by doing the following:
-1. Click the "Apps" tab on your Slack workspace and click the name of your bot.
+1. Click "Apps" on your Slack workspace (upper-left) and click the name of your bot.
 2. On the "Details" panel on the right, click the "..." icon that says "More", and click "Add this app to a channel".
 3. Select the channel you want the bot to join and click "Add".
 
