@@ -13,7 +13,7 @@ slack_web_client = WebClient(token='xxx')
 # Replace xxx with your Slack app's signing secret.
 signing_secret = 'xxx'
 
-# Replace xxx with your Algorithmia client token.
+# Replace xxx with your Algorithmia API key.
 algorithmia_client = Algorithmia.client('xxx')
 # Replace xxx with the path to your Emojize algorithm on Algorithmia.
 algo = algorithmia_client.algo('username/emojize/0.1.0')
