@@ -45,7 +45,7 @@ Now we are ready to create and upload our Lambda function. On the AWS Lambda [co
 1. Click "Create function".
 2. Name the function "emojize".
 3. Select Python3.6 as Runtime.
-4. If you deployed the model with Sagemaker, assign the IAM role you just created to the function.
+4. If you deployed the model with SageMaker, assign the IAM role you just created to the function.
 5. Click "Create function".
 
 Finally, upload the zip file to AWS Lambda by running `aws lambda update-function-code --function-name emojize --zip-file fileb://function.zip`.
