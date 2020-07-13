@@ -17,7 +17,7 @@ Next, create a SageMaker model:
 3. In container definition, choose "Provide model artifacts and inference image location" and paste the ECR URI into "Location of inference code image".
 4. Click "Create model".
 
-We then create an endpoint configuration:
+Then, create an endpoint configuration:
 1. Click the "Endpoint configurations" tab and click "Create endpoint configuration".
 2. Create a name for the endpoint configuration.
 3. Click "Add model" and select the model we just created.
