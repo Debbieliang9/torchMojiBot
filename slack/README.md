@@ -14,6 +14,9 @@ Before deploying the model, Lambda function, and setting up the API gateway:
 
 5. Click "Install App to Workspace". You should see the "Bot User OAuth Access Token" after installation.
 
+
+<br />
+
 After deploying the model, Lambda function, and setting up the API gateway:
 
 6. On the “Event Subscriptions” tab, subscribe to bot events `message.channels` and `message.im` and paste the API gateway's REST endpoint URL to the "Request URL" box. You should see the green "Verified" with a checkmark, meaning Slack's [url verification](https://api.slack.com/events/url_verification) succeeded.
