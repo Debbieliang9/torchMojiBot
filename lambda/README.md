@@ -2,24 +2,24 @@
 
 This directory contains the code for the [AWS Lambda](https://aws.amazon.com/lambda/) function that:
 1. Accepts and responds to the [URL verification](https://api.slack.com/events/url_verification) request from Slack.
-2. Authenticates the Slack subscription message, extracts the text and sends it to our prediction service (Sagemaker or Algorithmia).
+2. Authenticates the Slack subscription message, extracts the text and sends it to our prediction service (SageMaker or Algorithmia).
 3. Receives the prediction response (emoji) and uses the Slack web client to post the emoji reaction to Slack workspace.
 
 The `package` folder contains all the Python dependencies required by `lambda_function.py`.
 
 Before uploading to AWS Lambda, you need to replace the credential placeholders in `lambda_function.py` with yours.
 
-If you deployed the model with Sagemaker, in `sagemaker/lambda_function.py`, provide your Slack bot user's OAuth access token and Slack app's signing secret (lines 12 and 14). They can be found by clicking the Slack app name in your [app directory](https://api.slack.com/apps). Also, replace the `EndpointName` on line 44 with your Sagemaker endpoint name.
+If you deployed the model with SageMaker, in `sagemaker/lambda_function.py`, provide your Slack bot user's OAuth access token and Slack app's signing secret (lines 12 and 14). They can be found by clicking the Slack app name in your [app directory](https://api.slack.com/apps). Also, replace the `EndpointName` on line 44 with your Sagemaker endpoint name.
 
 If you deployed the model with Algorithmia, in `algorithmia/lambda_function.py`, in addition to the Slack credentials, provide your Algorithmia API token and path to your deployed model (lines 17 and 19).
 
 Run `cd package && zip -r9 ${OLDPWD}/function.zip . && cd ${OLDPWD}`.
 
-If you deployed the model with Sagemaker, run `cd sagemaker && zip -g ${OLDPWD}/function.zip lambda_function.py && cd ${OLDPWD}`.
+If you deployed the model with SageMaker, run `cd sagemaker && zip -g ${OLDPWD}/function.zip lambda_function.py && cd ${OLDPWD}`.
 
 If you deployed the model with Algorithmia, run `cd algorithmia && zip -g ${OLDPWD}/function.zip lambda_function.py && cd ${OLDPWD}`.
 
-For Sagemaker deployment, before creating the Lambda function, you need to create an IAM role with the `sagemaker:InvokeEndpoint` policy and later assign it to the function.
+For SageMaker deployment, before creating the Lambda function, you need to create an IAM role with the `sagemaker:InvokeEndpoint` policy and later assign it to the function.
 1. Go to the IAM [policy](https://console.aws.amazon.com/iam/home?ad=c&cp=bn&p=iam#/policies) and click "Create policy".
 2. Open the "JSON" tab and paste the following:
 ```
