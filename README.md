@@ -13,4 +13,13 @@ After completing all the steps above, send a direct message "this is great!" to 
 
 ![Slack](https://github.com/cw75/torchMojiBot/blob/master/images/slack.png)
 
+You can even add the bot to channels by doing the following:
+1. Click the "Apps" tab on your Slack workspace and click the name of your bot.
+2. On the "Details" panel on the right, click the "..." icon that says "More", and click "Add this app to a channel".
+3. Select the channel you want the bot to join and click "Add".
+
+In my case, I have added the bot to the "test" channel, and here we go:
+
+![Slack-channel](https://github.com/cw75/torchMojiBot/blob/master/images/slack-channel.png)
+
 When you are done having fun, remember to delete all the AWS resources you created!
