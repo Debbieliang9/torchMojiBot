@@ -49,4 +49,5 @@ If you deployed the model on SageMaker, attach the IAM policy you just created t
 2. Click "Attach policies" and search for the IAM policy.
 3. Click "Attach policy".
 
-Finally, upload the zip file to AWS Lambda by running `aws lambda update-function-code --function-name emojize --zip-file fileb://function.zip`.
+Finally, upload the zip file to AWS Lambda by running  
+`aws lambda update-function-code --function-name emojize --zip-file fileb://function.zip`
