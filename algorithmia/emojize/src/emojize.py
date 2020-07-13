@@ -28,8 +28,9 @@ client = Algorithmia.client()
 
 # First, upload the vocabulary and model weights to the Algorithmia data store.
 # The following lines retreive them using the Algorithmia data API.
+# Replace the path placeholder with your Algorithmia file upload paths.
 vocab = client.file("data://path/to/vocabulary.json").getFile()
-model_weights = client.file("data://path/to/model/weights.bin").getFile().name
+model_weights = client.file("data://path/to/pytorch_model.bin").getFile().name
 
 max_sentence_length = 100
 
