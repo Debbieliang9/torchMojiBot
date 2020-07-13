@@ -52,7 +52,7 @@ app = Flask(__name__)
 
 @app.route('/ping', methods = ['GET'])
 def ping():
-    # Respond to Sagemaker's health check requests.
+    # Respond to SageMaker's health check requests.
     return Response(status=200)
 
 @app.route('/invocations', methods = ['POST'])

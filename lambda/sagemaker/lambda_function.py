@@ -38,7 +38,7 @@ def lambda_handler(event, context):
                 channel_id = event['channel']
                 ts = event['ts']
                 text = event['text']
-                # Send the text to our model deployed on Sagemaker
+                # Send the text to our model deployed on SageMaker
                 # and get the emoji response.
                 response = client.invoke_endpoint(
                     EndpointName='emojibot', 
