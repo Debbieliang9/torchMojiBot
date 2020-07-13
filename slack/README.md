@@ -6,11 +6,11 @@ Before deploying the model, Lambda function, and setting up the API gateway:
 2. Go to the Slack [app directory](https://api.slack.com/apps) and click “Create New App”.
 3. Create a name for the app (bot) and link it to the test workspace.
 
-![slack-create](https://github.com/cw75/torchMojiBot/blob/master/images/slack-create.png)
+<img src="https://github.com/cw75/torchMojiBot/blob/master/images/slack-create.png" alt="drawing" width="500"/>
 
 4. Go to the “OAuth & Permissions” tab and add `channels:history`, `im:history`, and `reactions:write` to the “Bot Token Scopes”.
 
-![slack-auth](https://github.com/cw75/torchMojiBot/blob/master/images/slack-auth.png)
+<img src="https://github.com/cw75/torchMojiBot/blob/master/images/slack-auth.png" alt="drawing" width="500"/>
 
 5. Click "Install App to Workspace". You should see the "Bot User OAuth Access Token" after installation.
 
@@ -18,4 +18,4 @@ After deploying the model, Lambda function, and setting up the API gateway:
 
 6. On the “Event Subscriptions” tab, subscribe to bot events `message.channels` and `message.im` and paste the API gateway's REST endpoint URL to the "Request URL" box. You should see the green "Verified" with a checkmark, meaning Slack's [url verification](https://api.slack.com/events/url_verification) succeeded.
 
-![slack-sub](https://github.com/cw75/torchMojiBot/blob/master/images/slack-sub.png)
+<img src="https://github.com/cw75/torchMojiBot/blob/master/images/slack-sub.png" alt="drawing" width="500"/>
