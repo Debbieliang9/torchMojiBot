@@ -2,6 +2,13 @@
 
 This repo contains the code and detailed instruction to reproduce the intelligent Slack bot I built in this blog post (TODO: add link). Powered by the [torchMoji](https://github.com/cw75/torchMoji) model, the bot automatically reacts to Slack messages with emoji.
 
+Before proceeding, make sure you have installed `python3`, `wget`, and `zip`.
+Also, install and configure [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html).
+
+If you are deploying the model on SageMaker, you also need `docker`.
+
+If you are deploying the model on Algorithmia, you also need `pip3`.
+
 Overall, there are 5 steps:
 1. Set up the Slack bot by completing steps 1-4 [here](https://github.com/cw75/torchMojiBot/tree/master/slack).
 2. Deploy the torchMoji model on [Sagemaker](https://aws.amazon.com/sagemaker/) or [Algorithmia](https://algorithmia.com/) (or both!). See [here](https://github.com/cw75/torchMojiBot/tree/master/sagemaker) for Sagemaker deployment and [here](https://github.com/cw75/torchMojiBot/tree/master/algorithmia) for Algorithmia deployment.
