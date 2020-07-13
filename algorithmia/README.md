@@ -15,7 +15,7 @@ Then, on the Algorithmia console:
 4. Click "Create New Algorithm".
 
 You will be prompted with a code snippet that you can use to clone the repo. After cloning the repo,
-1. Overwrite `requirements.txt` and `src/emojize.py` with the files in our `emojize/`. 
+1. Overwrite `requirements.txt` and `src/emojize.py` with the files in our `emojize/`. `emojize.py` is our prediction script that accepts a text string, runs the torchMoji model and outputs an emoji based on the sentiment of the text.
 2. Replace the path placeholder in line 31-32 of `emojize.py` with your file upload paths (you can find them in the Algorithmia console).
 3. `git commit` `requirements.txt` and `src/emojize.py`, and `git push` (this takes a while).
 
