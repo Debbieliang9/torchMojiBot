@@ -48,6 +48,4 @@ Now we are ready to create and upload our Lambda function. On the AWS Lambda [co
 4. If you deployed the model with Sagemaker, assign the IAM role you just created to the function.
 5. Click "Create function".
 
-Install and configure [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html).
-
 Finally, upload the zip file to AWS Lambda by running `aws lambda update-function-code --function-name emojize --zip-file fileb://function.zip`.
