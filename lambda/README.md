@@ -2,7 +2,7 @@
 
 This directory contains the code for the [AWS Lambda](https://aws.amazon.com/lambda/) function that:
 1. Accepts and responds to the [URL verification](https://api.slack.com/events/url_verification) request from Slack.
-2. Authenticates the Slack subscription message, extracts the text and sends it to our prediction service (SageMaker or Algorithmia).
+2. Authenticates the Slack subscription message, extracts the text and sends it to the prediction service (SageMaker or Algorithmia).
 3. Receives the prediction response (emoji) and uses the Slack web client to post the emoji reaction to Slack workspace.
 
 The `package` folder contains all the Python dependencies required by `lambda_function.py`.
@@ -37,7 +37,7 @@ For SageMaker deployment, before creating the Lambda function, you need to creat
 ```
 3. Click "Review policy", give it a name, and click "Create policy".
 
-Now we are ready to create and upload our Lambda function. On the AWS Lambda [console](https://console.aws.amazon.com/lambda/),
+Now you are ready to create and upload the Lambda function. On the AWS Lambda [console](https://console.aws.amazon.com/lambda/),
 1. Click "Create function".
 2. Name the function "emojize".
 3. Select Python3.6 as Runtime.
