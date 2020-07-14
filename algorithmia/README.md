@@ -7,7 +7,7 @@ The two files you need are `vocabulary.json` for sentence tokenization and `pyto
 `vocabulary.json` is already in the repo here `torchMojiBot/algorithmia/model/vocabulary.json`. To download `pytorch_model.bin`, simply run `python3 scripts/download_weights.py` from the `torchMojiBot/algorithmia` directory (note that you need to install `wget` to execute the script). The weights will be downloaded to `torchMojiBot/algorithmia/model/pytorch_model.bin`.
 
 Next, run `pip3 install algorithmia` to install the Algorithmia Python client and run `python3 data.py` to upload the model files to the Algorithmia's hosted data store.  
-When prompted, enter your Algorithmia user name and API key. The API key can be found by clicking the "API Keys" tab on the Algorithmia console.  
+When prompted, enter your Algorithmia user name and API key. The API key can be found under the "API Keys" tab on the Algorithmia console.  
 After entering the credential, you should see "Model files successfully uploaded!".
 
 Then, on the Algorithmia console:
