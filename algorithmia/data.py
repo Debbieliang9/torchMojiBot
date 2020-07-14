@@ -4,12 +4,12 @@ from Algorithmia.acl import ReadAcl
 import sys
 
 if __name__ == '__main__':
-    if not len(sys.argv) == 3:
-        print('Usage: python3 data.py <algorithmia user name> <algorithmia api key>')
+    if not len(sys.argv) == 1:
+        print('Usage: python3 data.py')
         sys.exit(1)
 
-    user_name = sys.argv[1]
-    api_key = sys.argv[2]
+    user_name = input("Enter Algorithmia user name: ")
+    api_key = input("Enter Algorithmia API key: ")
 
     client = Algorithmia.client(api_key)
     dir_name = 'data://' + user_name + '/emojize'
@@ -17,3 +17,5 @@ if __name__ == '__main__':
     collection.create(ReadAcl.public)
     client.file(dir_name + '/vocabulary.json').putFile('model/vocabulary.json')
     client.file(dir_name + '/pytorch_model.bin').putFile('model/pytorch_model.bin')
+
+    print('Model files successfully uploaded!')
