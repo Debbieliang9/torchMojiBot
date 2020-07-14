@@ -12,7 +12,7 @@ Before deploying the model, Lambda function, and setting up the API gateway:
 
 <img src="https://github.com/cw75/torchMojiBot/blob/master/images/slack-auth.png" alt="drawing" width="650"/>
 
-5. Click "Install App to Workspace". You should see the "Bot User OAuth Access Token" after installation.
+5. Click "Install App to Workspace" and "Allow". You should see the "Bot User OAuth Access Token" after installation.
 
 
 <br />
