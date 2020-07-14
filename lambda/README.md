@@ -11,7 +11,7 @@ Before uploading to AWS Lambda, you need to replace the credential placeholders 
 
 Regardless of which platform you used to deploy the model, you need to provide your Slack bot user's OAuth access token and Slack app's signing secret (lines 12 and 14 of `sagemaker/lambda_function.py` or `algorithmia/lambda_function.py`). They can be found by clicking the Slack app name in your [app directory](https://api.slack.com/apps). The OAuth access token can be found under the "OAuth & Permissions" tab and the signing secret can be found under the "Basic Information" tab.
 
-If you deployed the model on SageMaker, in `sagemaker/lambda_function.py`, replace the `EndpointName` on line 44 with your Sagemaker endpoint name.
+If you deployed the model on SageMaker, in `sagemaker/lambda_function.py`, replace the `EndpointName` on line 44 with your SageMaker endpoint name.
 
 If you deployed the model on Algorithmia, in `algorithmia/lambda_function.py`, provide your Algorithmia API key on line 17 and path (in the form of "username/modelname/version") to your deployed model on line 19.
 
