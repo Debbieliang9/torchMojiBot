@@ -21,7 +21,7 @@ After completing all the steps above, send a direct message "this is great!" to 
 
 You can even add the bot to channels by doing the following:
 1. Click "Apps" on your Slack workspace (upper-left) and click the name of your bot.
-2. On the "Details" panel on the right, click the "..." icon that says "More", and click "Add this app to a channel".
+2. Click "Details" on the upper-right corner, click the "..." icon that says "More", and click "Add this app to a channel".
 3. Select the channel you want the bot to join and click "Add".
 
 In my case, I have added the bot to the "test" channel, and here we go:
