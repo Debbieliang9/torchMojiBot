@@ -1,7 +1,7 @@
 # Setting up the API Gateway
 
-1. Go to the API Gateway [console](https://console.aws.amazon.com/apigateway) and click "Create API".
-2. Click "Build" under "REST API", create a name for the API and click "Create API".
+1. Go to the API Gateway [console](https://console.aws.amazon.com/apigateway) console (if you have existing APIs created, click "Create API").
+2. Click "Build" under "REST API" (non-private), create a name for the API and click "Create API".
 3. From the "Actions" drop-down list, click "Create Resource", enter "events" as the resource name and click "Create Resource".
 4. Click `/events` in the "Resources" directory, from the "Actions" drop-down list, click "Create Method".
 5. Select "POST" from the drop-down list and click the tick mark.
