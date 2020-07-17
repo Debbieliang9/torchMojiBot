@@ -40,3 +40,5 @@ algo = client.algo('username/emojize/0.1.0')
 algo.set_options(timeout=300) # optional
 print(algo.pipe(input).result)
 ```
+
+Now that the model is deployed, the next step is to deploy the AWS Lambda function that performs request authorization and routes traffic between Slack and Algorithmia. Proceed to [here](https://github.com/cw75/torchMojiBot/tree/master/lambda).
