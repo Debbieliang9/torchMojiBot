@@ -9,7 +9,7 @@ The `package` folder contains all the Python dependencies required by `lambda_fu
 
 Before uploading to AWS Lambda, you need to replace the credential placeholders in `lambda_function.py` with yours.
 
-Regardless of which platform you used to deploy the model, you need to provide your Slack bot user's OAuth access token and Slack app's signing secret (lines 12 and 14 of `sagemaker/lambda_function.py` or `algorithmia/lambda_function.py`). They can be found by clicking the Slack app name in your [app directory](https://api.slack.com/apps). The OAuth access token can be found under the "OAuth & Permissions" tab and the signing secret can be found under the "Basic Information" tab.
+Regardless of which platform you used to deploy the model, you need to provide your Slackbot user's OAuth access token and Slack app's signing secret (lines 12 and 14 of `sagemaker/lambda_function.py` or `algorithmia/lambda_function.py`). They can be found by clicking the Slack app name in your [app directory](https://api.slack.com/apps). The OAuth access token can be found under the "OAuth & Permissions" tab and the signing secret can be found under the "Basic Information" tab.
 
 If you deployed the model on SageMaker, in `sagemaker/lambda_function.py`, replace the `EndpointName` on line 44 with your SageMaker endpoint name.
 
