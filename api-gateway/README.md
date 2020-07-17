@@ -9,6 +9,6 @@
 7. Choose "Lambda Function" as the integration type and specify the region and the name ("emojize") of your Lambda function.
 8. Click "Save" and "OK".
 9. From the "Actions" drop-down list, click "Deploy API". Select "New Stage" and name the stage "slack". Then click "Deploy".
-10. Append "/events" to the "Invoke URL" (it should look like "https://xxx.amazonaws.com/slack/events") and paste it to the Slack bot event subscription page (see step 6 [here](https://github.com/cw75/torchMojiBot/tree/master/slack)).
+10. Append "/events" to the "Invoke URL" (it should look like "https://xxx.amazonaws.com/slack/events") and paste it to the Slack bot event subscription page (detail below).
 
 You are almost there! The last step is to finish setting up the Slackbot by completing step 6 [here](https://github.com/cw75/torchMojiBot/tree/master/slack).
