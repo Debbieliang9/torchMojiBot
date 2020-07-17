@@ -53,3 +53,5 @@ If you deployed the model on SageMaker, attach the IAM policy you just created t
 
 Finally, upload the zip file to AWS Lambda by running  
 `aws lambda update-function-code --function-name emojize --zip-file fileb://function.zip`
+
+Now that you've deployed the Lambda function, the next step is to set up the API gateway that routes traffic to the Lambda function and exposes a REST endpoint to Slack. Instruction [here](https://github.com/cw75/torchMojiBot/tree/master/api-gateway).
