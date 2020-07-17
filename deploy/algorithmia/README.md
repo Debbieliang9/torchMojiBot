@@ -41,4 +41,4 @@ algo.set_options(timeout=300) # optional
 print(algo.pipe(input).result)
 ```
 
-Now that you've deployed the model, the next step is to deploy the AWS Lambda function that performs request authorization and routes traffic between Slack and Algorithmia. Proceed to [here](https://github.com/cw75/torchMojiBot/tree/master/lambda).
+Now that you've deployed the model, the next step is to deploy the AWS Lambda function that performs request authentication and routes traffic between Slack and Algorithmia. Proceed to [here](https://github.com/cw75/torchMojiBot/tree/master/lambda).
