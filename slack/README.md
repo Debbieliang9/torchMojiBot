@@ -23,7 +23,7 @@ The next step is to deploy the torchMoji model. Proceed to [here](https://github
 
 After deploying the model, Lambda function, and setting up the API gateway:
 
-6. On the “Event Subscriptions” tab, subscribe to bot events `message.channels` and `message.im` and paste the API gateway's REST endpoint URL to the "Request URL" box. You should see the green text "Verified" with a checkmark, meaning Slack's [url verification](https://api.slack.com/events/url_verification) succeeded.
+6. On the “Event Subscriptions” tab, subscribe to bot events `message.channels` and `message.im` and paste the API gateway's REST endpoint URL (in the form "https://xxx.amazonaws.com/slack/events") to the "Request URL" box. You should see the green text "Verified" with a checkmark, meaning Slack's [url verification](https://api.slack.com/events/url_verification) succeeded.
 
 <img src="https://github.com/cw75/torchMojiBot/blob/master/images/slack-sub.png" alt="drawing" width="650"/>
 
