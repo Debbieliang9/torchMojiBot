@@ -5,8 +5,8 @@ This repo contains the code and detailed instruction to reproduce the intelligen
 Before proceeding, make sure you have installed `python3` (the repo is tested with python3.6), `wget`, and `zip`.  
 Also, install and configure [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html).
 
-If you are deploying the model on SageMaker, you need `docker` (installation guide [here](https://docs.docker.com/engine/install/)).  
-If you are deploying the model on Algorithmia, you need `pip3` (the repo is tested with pip3.6).
+If you are deploying the model on SageMaker, you also need `docker` (installation guide [here](https://docs.docker.com/engine/install/)).  
+If you are deploying the model on Algorithmia, you also need `pip3` (the repo is tested with pip3.6).
 
 Overall, there are 5 steps:
 1. Set up the Slackbot by completing steps 1-5 [here](https://github.com/cw75/torchMojiBot/tree/master/slack).
