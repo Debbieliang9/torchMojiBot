@@ -27,4 +27,4 @@ After deploying the model, Lambda function, and setting up the API gateway:
 
 <img src="https://github.com/cw75/torchMojiBot/blob/master/images/slack-sub.png" alt="drawing" width="650"/>
 
-You've now successfully deployed an AI-powered emoji bot, congradulations! See [here](https://github.com/cw75/torchMojiBot) for how to test the bot via direct messaging or adding the bot to channels. Have fun!
+You've now successfully deployed an AI-powered emoji bot to Slack, congradulations! See [here](https://github.com/cw75/torchMojiBot) for how to test the bot via direct messaging or adding the bot to channels. Have fun!
