@@ -14,9 +14,11 @@ The first step is to create and set up a new Slackbot:
 
 5. Click "Install App to Workspace" and "Allow". You should see the "Bot User OAuth Access Token" after installation.
 
-The next step is to deploy the torchMoji model, proceed to [here](https://github.com/cw75/torchMojiBot/tree/master/deploy/sagemaker) if you want to deploy it on SageMaker, and [here](https://github.com/cw75/torchMojiBot/tree/master/deploy/algorithmia) if you want to deploy it on Algorithmia.
+The next step is to deploy the torchMoji model. Proceed to [here](https://github.com/cw75/torchMojiBot/tree/master/deploy/sagemaker) if you want to deploy it on SageMaker, and [here](https://github.com/cw75/torchMojiBot/tree/master/deploy/algorithmia) if you want to deploy it on Algorithmia.
 
 
+<br />
+---------------------------------------------------------------------------------
 <br />
 
 After deploying the model, Lambda function, and setting up the API gateway:
