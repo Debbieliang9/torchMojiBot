@@ -3,7 +3,7 @@
 The first step is to build a docker image that runs a [Flask server](https://github.com/cw75/torchMojiBot/blob/master/sagemaker/emojibot-sagemaker.py) that responds to SageMaker's health check (ping) requests and serves prediction by running the torchMoji model.
 
 Before building the image, you need two files for model initialization: `vocabulary.json` for sentence tokenization and `pytorch_model.bin` that stores pre-trained model weights.
-`vocabulary.json` is already in `model/vocabulary.json`. To download `pytorch_model.bin`, simply run `python3 scripts/download_weights.py`. The weights will be downloaded to `model/pytorch_model.bin`.
+`vocabulary.json` is already in `model/vocabulary.json`. To download `pytorch_model.bin`, simply run `python3 scripts/download_weights.py` (note that you need to install `wget` to execute the script). The weights will be downloaded to `model/pytorch_model.bin`.
 
 Then, build a docker image and push it to AWS ECR:
 1. Go to AWS [ECR console](https://console.aws.amazon.com/ecr) and create a new repository.
