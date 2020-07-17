@@ -19,7 +19,7 @@ The next step is to deploy the torchMoji model. Proceed to [here](https://github
 
 <br />
 ---------------------------------------------------------------------------------
-<br />
+<br /><br />
 
 After deploying the model, Lambda function, and setting up the API gateway:
 
