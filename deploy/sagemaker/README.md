@@ -29,4 +29,4 @@ Finally, create a SageMaker endpoint:
 3. Select "Use an existing endpoint configuration" and choose the endpoint configuration that you just created.
 4. Click "Create endpoint".
 
-All steps above can also be accomplished via the [SageMaker API](https://docs.aws.amazon.com/sagemaker/latest/APIReference/Welcome.html).
+Now that the model is deployed, the next step is to deploy the AWS Lambda function that performs request authorization and routes traffic between Slack and SageMaker. Proceed to [here](https://github.com/cw75/torchMojiBot/tree/master/lambda).
