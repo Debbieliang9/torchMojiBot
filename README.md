@@ -1,6 +1,6 @@
 # torchMojiBot
 
-This repo contains the code and detailed instruction to reproduce the intelligent Slack bot I built in this blog post (TODO: add link). Powered by the [torchMoji](https://github.com/cw75/torchMoji) model, the bot automatically reacts to Slack messages with emoji.
+This repo contains the code and detailed instruction to reproduce the intelligent Slackbot I built in this blog post (TODO: add link). Powered by the [torchMoji](https://github.com/cw75/torchMoji) model, the bot automatically reacts to Slack messages with emoji.
 
 Before proceeding, make sure you have installed `python3` (the repo is tested with python3.6), `wget`, and `zip`.  
 Also, install and configure [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html).
@@ -9,11 +9,11 @@ If you are deploying the model on SageMaker, you need `docker` (installation gui
 If you are deploying the model on Algorithmia, you need `pip3` (the repo is tested with pip3.6).
 
 Overall, there are 5 steps:
-1. Set up the Slack bot by completing steps 1-5 [here](https://github.com/cw75/torchMojiBot/tree/master/slack).
+1. Set up the Slackbot by completing steps 1-5 [here](https://github.com/cw75/torchMojiBot/tree/master/slack).
 2. Deploy the torchMoji model on [SageMaker](https://aws.amazon.com/sagemaker/) or [Algorithmia](https://algorithmia.com/) (or both!). See [here](https://github.com/cw75/torchMojiBot/tree/master/deploy/sagemaker) for SageMaker deployment and [here](https://github.com/cw75/torchMojiBot/tree/master/deploy/algorithmia) for Algorithmia deployment.
 3. Deploy the AWS Lambda function that performs request authorization and routes traffic between Slack and the prediction service. Instruction [here](https://github.com/cw75/torchMojiBot/tree/master/lambda).
 4. Set up the API gateway that routes traffic to the Lambda function and exposes a REST endpoint to Slack. Instruction [here](https://github.com/cw75/torchMojiBot/tree/master/api-gateway).
-5. Finish setting up the Slack bot by completing step 6 [here](https://github.com/cw75/torchMojiBot/tree/master/slack).
+5. Finish setting up the Slackbot by completing step 6 [here](https://github.com/cw75/torchMojiBot/tree/master/slack).
 
 After completing all the steps above, send a direct message "this is great!" to your bot in the Slack workspace. You should see the following.
 
