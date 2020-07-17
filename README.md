@@ -28,4 +28,4 @@ In my case, I have added the bot to the "test" channel, and here we go:
 
 ![Slack-channel](https://github.com/cw75/torchMojiBot/blob/master/images/slack-channel.png)
 
-When you are done having fun, remember to delete all the AWS resources you created!
+When you are done having fun, remember to delete all the AWS resources you created to save $$$!
