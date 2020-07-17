@@ -10,7 +10,7 @@ If you are deploying the model on Algorithmia, you need `pip3` (the repo is test
 
 Overall, there are 5 steps:
 1. Set up the Slack bot by completing steps 1-5 [here](https://github.com/cw75/torchMojiBot/tree/master/slack).
-2. Deploy the torchMoji model on [SageMaker](https://aws.amazon.com/sagemaker/) or [Algorithmia](https://algorithmia.com/) (or both!). See [here](https://github.com/cw75/torchMojiBot/tree/master/sagemaker) for SageMaker deployment and [here](https://github.com/cw75/torchMojiBot/tree/master/algorithmia) for Algorithmia deployment.
+2. Deploy the torchMoji model on [SageMaker](https://aws.amazon.com/sagemaker/) or [Algorithmia](https://algorithmia.com/) (or both!). See [here](https://github.com/cw75/torchMojiBot/tree/master/deploy/sagemaker) for SageMaker deployment and [here](https://github.com/cw75/torchMojiBot/tree/master/deploy/algorithmia) for Algorithmia deployment.
 3. Deploy the AWS Lambda function that performs request authorization and routes traffic between Slack and the prediction service. Instruction [here](https://github.com/cw75/torchMojiBot/tree/master/lambda).
 4. Set up the API gateway that routes traffic to the Lambda function and exposes a REST endpoint to Slack. Instruction [here](https://github.com/cw75/torchMojiBot/tree/master/api-gateway).
 5. Finish setting up the Slack bot by completing step 6 [here](https://github.com/cw75/torchMojiBot/tree/master/slack).
